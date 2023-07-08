@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/image/icon/logo100.ico" type="image/x-icon">
+    <title>RESERVACION</title>
+</head>
+<body>
+    <header>
+        <nav id="nav1">
+        <ul>
+            <li><a  href="./pages/inicio.html">HOME</a></li>
+            <li><a href="./pages/reservacion.html">RESERVACION</a></li>
+            <li><a href="./pages/menu.html">MENU</a></li>
+        </ul>
+        </nav>
+        <div id="logo">
+            <img src="./assets/image/logo100.png" alt="logo principal  restorante vegano">
+        </div>
+        <nav id="nav2">
+        <ul>
+            <li><a href="./pages/sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+        </ul>
+        </nav>
+        </header>
+    <main id="formulario">
+        
+        <form action="POST">
+            <h1>Haz Tu Reservavacion</h1>
+            <div id="datos-personales">
+                <h2 class="subtitulo">datos personales</h2>
+                <label for="nombre">Nombre Completo</label><br>
+                <input type="text" placeholder="ingrese su nombre completo"><br>
+                <label for="direccion">Direccion</label><br>
+                <input type="text" placeholder="ingrese su direccion"><br>
+                <label for="tel">Telefono</label><br>
+                <input type="number" placeholder="ingrese su Telefono"><br>
+                <label for="mail">Mail</label><br>
+                <input type="text" placeholder="ingrese su correo electronico"><br>
+            </div>
+                <div id="datos-reserva">
+                 <h2 class="subtitulo">datos de la Reserva</h2>
+                 <label for="cantidad">ingrese cantidad de persnas</label><br>
+                 <select name="personas" id="">
+                 <option value="1">1 (uno)</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+    </select>
+    <br>
+    <label for="fecha">Seleccione la fecha:</label><br>
+    <input type="date"><br>
+    <label for="hora">Seleccione un horario:</label>
+    <select name="horario" id="">
+     <option value="9:30">9:30 hs</option>
+     <option value="11:30">11:30 hs</option>
+     <option value="12:00">12:00 hs</option>
+     <option value="15:30">15:30 hs</option>
+     <option value="19:00">19:00 hs</option>
+     <option value="21:00">21:00 hs</option>
+    </select><br>
+                </div>
+                <input  class="enviar" type="button" value="enviar">
+             </form>
+
+           
+    </main>
+    <footer>
+        <img src="./assets/image/instagram-2-1.svg" alt="logo de instagram">
+        <h3 id="ins"><a href="#">Instagram</a></h3>
+        <img src="./assets/image/pinterest.png" alt="logo de pinterest">
+        <h3 id="pin"><a href="#">Pinterest</a></h3>
+        <img src="./assets/image/Whatsapp.png" alt="logo de contacto">
+        <h3 id="con"><a href="#">contactanos</a></h3>
+       </footer>
+</body>
+</html>

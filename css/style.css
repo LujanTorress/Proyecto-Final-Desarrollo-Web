@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ESTILOS DE INICIO.HTM*/
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header header"
+    "main main"
+    "footer footer";
+}
+header {
+    height: 20vh;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1 fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav1 logo nav2" ;
+    justify-items: center;
+    align-items: center;
+    background-color: #1C6758;
+
+}
+nav {
+    font-size: 20 px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#nav1 {
+    grid-area: nav1;
+
+}
+#nav2 {
+    grid-area: nav2;
+}
+nav ul ,#logo  {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style:none;
+    background-color: #D6CDA4;   
+    margin: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #b99b69;;
+}
+main {
+    grid-area: main;
+}
+
+#welcome {
+    grid-area: welcome;
+ height: 30vh;
+    background-color: #b99b69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+section article h1 {
+    font-size: 2rem; 
+    color: #1C6758;
+}
+
+section article button {
+align-self: self-end;
+padding: 10px;
+background-color:#1C6758;
+}
+button a {
+    text-decoration: none ;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b99b69;
+}
+
+#fotos {
+   height:40vh ;
+    background-color: #D6CDA4;  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+ 
+main section article img {
+    height: 30vh;
+    width: 25vh;
+    margin: 2vh;
+ }
+ #ubicacion {
+    background-color: #b99b69;
+    display: flex;
+flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ #ubiacion img{
+    height: 40vh;
+    width: 30vh;
+    margin: 2vh;
+ }
+footer {
+    height: 20vh;
+    grid-area: footer;
+    background-color:#1C6758;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer img {
+    height: 10vh;
+    width: 10vh;
+    margin: 2vh; 
+}
+
+footer a {
+    text-decoration: none;
+    color: #b99b69;
+}
+
+/* comienza estilos de reservacion.html*/
+#formulario{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+    background-color: #b99b69;
+}
+form h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: #1C6758;
+}
+.subtitulo{
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #45322e;
+}
+input {
+    background-color: #45322e;
+    height: 5vh;
+    width: 15vw ;
+    margin: 10px;
+    color: white;
+}
+select{
+    background-color: #45322e;
+    margin: 15px;
+    width: 8vw;
+    height: 5vh;
+    color: white;
+}
+.enviar {
+    background-color: #1C6758;
+    color:#b99b69;
+}
+
+
+@media (max-width:576px) {
+    body{
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+    }
+    header {
+            height: 30vh;
+            grid-area: header;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:1fr;
+            grid-template-areas: "logo nav1 nav2"  ;
+            justify-items: left;
+            align-items:center;
+            background-color: #1C6758;
+        
+    }
+    #logo {
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    #logo img {
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content:start;
+    }
+    nav ul li {
+       font-size: 2rem;
+    }
+    #welcome {
+        height: 60vh;
+        display: flex;
+    }
+    section article button {
+        padding: 20px;
+        }
+    section article h1 {
+        font-size: 4rem; 
+        color: #1C6758;
+    }
+    #fotos {
+        height:60vh ;
+         background-color: #D6CDA4;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+     main section article img {
+        height: 27vh;
+        width: 33vh;
+        margin: 2vh;
+     }
+    /* MEDIA QUERY DE RESERVACION.HTML*/
+    input, label {
+    height: 7vh;
+    width: 40vh;
+   font-size: 2rem;
+    }
+    .subtitulo{
+    margin: 2vh;
+    }
+    select{
+        background-color: #45322e;
+        margin: 20px;
+        width: 40vw;
+        height: 10vh;
+        color: white;
+        font-size: 2rem;
+    }
+}
